@@ -3,22 +3,47 @@ body {
 }
 
 .container {
-  width: 25vh;
-  height: 25vh;
+  width: 30%;
+  height: 100vh;
   position: fixed;
   top: 50%;
   left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  gap: 2rem 0;
   transform: translate(-50%, -50%);
 }
 
 .stopwatch {
+  width: 40vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  border: 1px solid white;
+  border: .5rem solid #593d88;
   border-radius: 50%;
   font-size: 1.25rem;
   color: white;
+}
+
+.controls {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #593d88;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:not(:last-child) {
+  margin-right: 1rem;
 }
