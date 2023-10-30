@@ -1,5 +1,6 @@
 body {
   background-color: #1b1b1d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -23,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: .5rem solid #593d88;
+  border: 0.5rem solid #593d88;
   border-radius: 50%;
   font-size: 1.25rem;
   color: white;
@@ -42,8 +43,18 @@ body {
   background-color: #593d88;
   color: white;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: .3s all ease-in-out;
 }
 
 .btn:not(:last-child) {
   margin-right: 1rem;
+}
+
+.btn:only-child {
+  margin: 0 auto;
+}
+
+.btn:hover{
+  background-color: #634499;
 }
