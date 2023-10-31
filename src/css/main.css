@@ -44,7 +44,7 @@ body {
   color: white;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .btn:not(:last-child) {
@@ -55,6 +55,6 @@ body {
   margin: 0 auto;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #634499;
 }
