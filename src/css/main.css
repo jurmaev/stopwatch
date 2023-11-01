@@ -5,6 +5,7 @@ body {
 
 .container {
   width: 25vw;
+  min-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +18,8 @@ body {
 .stopwatch {
   width: 25vw;
   height: 25vw;
+  min-width: 400px;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,10 +65,13 @@ body {
 .laps__item {
   display: flex;
   justify-content: space-between;
+  padding: 0.375rem 0.2rem;
+  border-radius: 0.2rem;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.laps__item:not(:last-child) {
-  margin-bottom: 0.75rem;
+.laps__item:hover {
+  background-color: #313131;
 }
 
 .laps__number,
