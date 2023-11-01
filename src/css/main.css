@@ -58,3 +58,37 @@ body {
 .btn:hover {
   background-color: #634499;
 }
+
+.laps {
+  width: 100%;
+}
+
+.laps__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.laps__item:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.laps__number,
+.laps__time,
+.laps__diff {
+  font-size: 1rem;
+  color: white;
+}
+
+.laps__number {
+  flex-grow: 1.5;
+}
+
+.laps__time {
+  flex-grow: 3;
+}
+
+.laps__diff {
+  flex-grow: 2;
+  text-align: end;
+  color: #383838;
+}
